@@ -14,10 +14,7 @@ en: resume-en.pdf
 zh: resume-zh.pdf
 
 $(PDFCAT): $(PDFS)
-	gs -dBATCH -dNOPAUSE -dPrinted=false \
-		-sDEVICE=pdfwrite \
-		-sOutputFile=$@ \
-		$(PDFS)
+	pdftk $(PDFS) cat output $@
 
 resume-zh.pdf: resume-zh.tex $(DEPS)
 	env TEXINPUTS=$(TEXINPUTS) latexmk -xelatex $<

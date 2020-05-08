@@ -12,7 +12,7 @@
 %%     https://www.latextemplates.com/template/plasmati-graduate-cv
 %%
 
-\ProvidesClass{resume}[2019/08/17 v2.4.7 Resume Class]
+\ProvidesClass{resume}[2019/05/14 v2.4.4 Resume Class]
 \LoadClass{article}
 
 %%
@@ -89,12 +89,13 @@
 
 % Fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont{IBM Plex Serif}
-\setmonofont{IBM Plex Mono}
+\setmainfont{Noto Sans}
+\setmonofont{Monaco}
 
 % Chinese setup
 \ifdef{\@zh}{
-  \setCJKmainfont{Source Han Serif SC}
+  \xeCJKsetup{PunctStyle=kaiming}
+  \setCJKmainfont{Source Han Serif CN}
 }{}
 
 % Font Awesome icon aliases
@@ -175,17 +176,15 @@
 }
 
 \newcommand*{\githublink}[2]{%
-  \href{http://github.com/#1/#2}{\githubSymbol{} #1/#2}%
+  \href{http://github.com/#1/#2}%
+  {\githubSymbol{} #1/#2}%
 }
 
 \newcommand*{\link}[2]{\textcolor{linkcolor}{\href{#1}{#2}}}
 
-\def\@iconsize{\normalsize}
-\newcommand*{\iconsize}[1]{\def\@iconsize{#1}}
-
 \newcommand*{\icon}[1]{%
-  {\@iconsize\makebox[1em][c]{\textcolor{symbolcolor}{#1}}}%
-  \hspace{0.2em}\strut%
+  \makebox[1em][c]{\textcolor{symbolcolor}{#1}}%
+  \hspace{0.2em}%
 }
 
 % Test whether the command argument is given and is not empty
@@ -324,9 +323,10 @@
       \medskip \\
       \resumetitle{\@tagline}
     }{}
-    \medskip \\
+    \smallskip \\
     \@profile
   \end{minipage}
+  \smallskip
 }
 
 %%
