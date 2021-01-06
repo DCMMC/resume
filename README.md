@@ -1,7 +1,24 @@
 My Resume and LaTeX Template
 ============================
 
-**Weitian LI** `<wt@liwt.net>`
+Fonts requirements:
+
+* Noto Sans
+* Font Awesome 5 Free
+* Source Han Serif SC
+
+Notes for macOS users:
+
+If you encounter font not found problems.
+You may need to manually copy your fonts to TeX distribution.
+e.g.
+
+```bash
+cp -v ~/Library/Fonts/NotoSans-{Bold.ttf,Italic.ttf,Regular.ttf,BoldItalic.ttf} ~/Library/Application\ Support/MiKTeX/texmfs/install/fonts/opentype
+```
+
+Ref: [fduthesis](https://github.com/stone-zeng/fduthesis/issues/45)
+
 
 Introduction
 ------------

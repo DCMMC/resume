@@ -31,9 +31,10 @@
 % English version
 \documentclass{resume}
 
+
 % File information shown at the footer of the last page
 \fileinfo{%
-  \faCopyright{} 2019 Wentao Xiao
+  \faCopyright{} 2021 Wentao Xiao
 }
 
 \name{Wentao}{Xiao}
@@ -46,16 +47,11 @@
 % \photo{<height>}{<filename>}
 
 \profile{
-	\mobile{177-7511-0118}
-	\email{wentao.xiaoo@mail.dhu.edu.cn}
+	\mobile{+86 177-7511-0118}
+	\email{xwt20@mails.tsinghua.edu.cn}
 	\github{DCMMC} \\
-	\university{Donghua University ("Double-First Class", Project 211)}
-	\degree{B.S. in Computer Science}
-	% \birthday{1991-09-26}
-	% \home{湖南 \textbullet 邵阳}
-	% Custom information:
-	% \icontext{<icon>}{<text>}
-	% \iconlink{<icon>}{<link>}{<text>}
+	\university{Tsinghua University}
+	\degree{M.S. student in Computer Science}
 }
 
 \begin{document}
@@ -65,160 +61,82 @@
 % Summary & Objectives
 %======================================================================
 Strong interest in Computer Science related technology.
-Highly-motivated student with relatively extensive industry experience.
-At present, research
-Proficient in data modeling and analysis,
-and enthusiastic about computer and network technologies.
-With 3 years experience in Linux,
-skilled in Python, Java, C++ and Shell programming.
-Passionate about open source and share multiple projects on my
-\link{https://github.com/DCMMC}{GitHub}.
-
-%======================================================================
-\sectionTitle{Competences \& Languages}{\faWrench}
-%======================================================================
-\begin{competences}[10em]
-  \comptence{Operating Systems}{
-    \icon{\faLinux} Linux (10 years),
-    \icon{\faFreebsd} DragonFly BSD \& FreeBSD (7 years)
-  }
-  \comptence{Programming}{%
-    Python, C, Shell, R, Tcl/Tk
-  }
-  \comptence{Tools}{%
-    SSH, Git, Make, Tmux, Vi, Ansible
-  }
-  \comptence{Data Analysis}{%
-    R, Pandas; Matplotlib, ggplot2; Keras, Scikit-learn
-  }
-  \comptence{Web Development}{%
-    Flask, JavaScript, jQuery, Bootstrap
-  }
-  \comptence{\icon{\faLanguage} Languages}{
-    \textbf{English} ---
-      reading \& writing (good);
-      listening \& speaking (conversant)
-  }
-\end{competences}
+Highly-motivated student with research interested in cyberspace security and deep learning.
+Enthusiastic about computer and network technologies.
+With 4 years experience in Linux, skilled in Python, Java, C++ and Shell programming.
+Passionate about open source and share multiple projects on my \link{https://github.com/DCMMC}{GitHub}.
 
 %======================================================================
 \sectionTitle{Education}{\faGraduationCap}
 %======================================================================
 \begin{educations}
   \education%
-    {September 2013}%
-    {Shanghai Jiao Tong University}%
-    {School of Physics and Astronomy}%
-    {Physics}%
-    {Ph.D. (candidate; to graduate in the middle of 2019)}
+    {September 2020}%
+    {Tsinghua University}%
+    {Shenzhen International Graduate School}%
+    {Computer Technology}%
+    {M.S. student}
 
   \separator{0.5ex}
   \education%
-    {September 2009}%
-    [June 2013]%
-    {Shanghai Jiao Tong University}%
-    {Department of Physics and Astronomy}%
-    {Applied Physics}%
+    {September 2016}%
+    [June 2020]%
+    {Donghua University}%
+    {Department of Computer Science and Technology}%
+    {Computer Science and Technology}%
     {Bachelor's Degree}
 \end{educations}
-
-%======================================================================
-\sectionTitle{Computer Skills}{\faCogs}
-%======================================================================
-\begin{itemize}
-  \item DragonFly BSD operating system developer:
-    200+ code commits; kernel and system utilities;
-    participate in discussions and anwser questions
-    in mailing lists and the IRC channel.
-  \item Use Ansible to manage a VPS running DragonFly BSD that serves
-    personal email, authoritative DNS, website, Git, IRC, etc.
-  \item Built and administrate the workstations, a 4-node computer cluster,
-    and network facilities for the team.
-  \item Participated in building and testing the SKA high-performance
-    cluster prototype (1 login node + 1 data node + 4 computing nodes)
-    in Shanghai Astronomical Observatory.
-  \item Designed and developed the whole website (Django, Bootstrap, jQuery)
-    for \enquote{The 1st China--New Zealand Joint SKA Summer School}
-    in 2014.
-\end{itemize}
-
-%======================================================================
-\sectionTitle{Personal Projects}{\faCode}
-%======================================================================
-\begin{itemize}
-  \item \link{https://github.com/liweitianux/atoolbox}{\texttt{atoolbox}}:
-    (Python, Shell)
-    Various tools collected over the years, to help manage systems,
-    do daily tasks, analyze data, etc.
-  \item \link{https://github.com/liweitianux/dfly-update}{\texttt{dfly-update}}:
-    (Shell)
-    A simple tool to update a DragonFly BSD system.
-  \item \link{https://github.com/liweitianux/openrcs}{\texttt{openrcs}}:
-    (C)
-    Enhance \texttt{OpenBSD RCS}, to make it compatible with \texttt{GNU RCS}.
-  \item \link{https://github.com/liweitianux/fg21sim}{\texttt{fg21sim}}:
-    (Python)
-    Simulate the low-frequency radio sky maps.
-  \item \link{https://github.com/liweitianux/cdae-eor}{\texttt{cdae-eor}}:
-    (Python, Keras)
-    Use a Convolutional Denoising Autoencoder (CDAE) to separate the
-    faint EoR signal.
-  \item \link{https://github.com/liweitianux/chandra-acis-analysis}{\texttt{chandra-acis-analysis}}:
-    (Python, Shell, Tcl)
-    Semi-automate utilities for analyzing X-ray astronomical data.
-  \item \link{https://github.com/liweitianux/resume}{\texttt{resume}}:
-    (\LaTeX)
-    The template and source files of \emph{this} resume.
-\end{itemize}
 
 %======================================================================
 \sectionTitle{Research Achievements}{\faAtom}
 %======================================================================
 \begin{itemize}
-  \item Developed the low-frequency radio sky image simulation software:
-    \link{https://github.com/liweitianux/fg21sim}{\texttt{FG21sim}}.
-  \item Developed a suite of utilities to semi-automate the
-    X-ray astronomical data analysis:
-    \link{https://github.com/liweitianux/chandra-acis-analysis}{\texttt{chandra-acis-analysis}}.
-  \item Separated the faint cosmological EoR signal along the frequency
-    dimension using a Convolutional Denoising Autoencoder (CDAE).
-  \item Classified the radio galaxies in the FIRST survey according to
-    morphologies using a Convolutional Neutral Network (CNN).
-  \item Significantly improved the modeling of radio halos,
-    and integrated the instrumental effects of radio interferometers
-    into the simulation pipeline.
-  \item Improved the background modeling in X-ray spectral fitting
-    achieved more accurate and robust fitting results.
-  \item Published 2 first-author and 8 co-authored SCI papers.
+  \item Xiao, X., \textbf{Xiao, Wentao}, et. al. (Under Review). EBSNN: Extended Byte Segment Neural Network for Network Traffic Classification. \textit{Transactions on Dependable and Secure Computing}.
+  \item Zhang, B., \textbf{Xiao, Wentao}, et. al. (2020). Ransomware classification using patch-based CNN and self-attention network on embedded N-grams of opcodes. \textit{Future Generation Computer Systems, 110}, 708-720.
+  \item Wang, L., \textbf{Xiao, Wentao}, et. al. (2019). Dynamic Multi-label Learning with Multiple New Labels. In \textit{International Conference on Image and Graphics (pp. 421-431)}. Springer, Cham.
 \end{itemize}
+
+%======================================================================
+\sectionTitle{Competences}{\faWrench}
+%======================================================================
+\begin{competences}[10em]
+  \comptence{Programming}{
+    Python, Java, ECMAScript (JavaScript), C++, Matlab, C, Bash Shell,
+  }
+  \comptence{Tools}{%
+    Git, SSH, CMake, Tmux, Vim, \hologo{LaTeX}
+  }
+  \comptence{Research Tools}{%
+    Matplotlib, Keras, PyTorch, Tensorflow, Scikit-learn
+  }
+  \comptence{Software Dev.}{%
+    Django, Node.js, Vue, WebSocket, MongoDB, Docker, JavaFX, Android
+  }
+\end{competences}
+
 
 %======================================================================
 \sectionTitle{Internships}{\faBriefcase}
 %======================================================================
 \begin{experiences}
   \experience%
-    [April 2018]%
-    {August 2018}%
-    {Data Engineer @ Leadvisor Technology Inc. (startup company)}%
+    [September 2018]%
+    {December 2018}%
+    {Backend Engineer @ Shanghai FangChui Intelligent Technology Inc. (startup company)}%
     [\begin{itemize}
-      \item Search and scrape product and advertising data from Amazon web
-        (Python, Requests, BeautifulSoup).
-      \item Deployed the Airflow server and database to periodically
-        retrieve product sales and advertising data from Amazon.
-      \item Developed the website (Flask, jQuery) to help customers to
-        optimize their advertising campaigns on Amazon.
+      \item Real-time control and sensor data transmission between trainers and multiple trainee machines, using Django-Channel to create asynchronous websocket connections in Raspberry Pi.
+      \item Trainer information management system using MongoDB, Vue, and Vuetify.
+      \item Developed the system with Docker-compose to make DevOps easier.
     \end{itemize}]
 
   \separator{0.5ex}
   \experience%
-    [July 2013]%
-    {September 2013}%
-    {Web Developer @ 97 Suifang (startup company)}%
+    [August 2019]%
+    {August 2020}%
+    {Research Intern @ Peng Cheng Laboratory}%
     [\begin{itemize}
-      \item Developed the back-end (Django) to support user registration,
-        data storage and search.
-      \item Developed the front-end (jQuery, AJAX) to visualize the
-        temporal variations of a patient's examination indicators.
+      \item Ransomware Classification.
+      \item Network traffic analysis.
     \end{itemize}]
 \end{experiences}
 

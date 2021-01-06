@@ -41,6 +41,7 @@
 \RequirePackage{enumitem}
 \RequirePackage{setspace}
 \RequirePackage{array}
+\RequirePackage{hologo}
 \RequirePackage{multirow}
 \RequirePackage{makecell}  % multirowcell
 \RequirePackage{longtable}
@@ -95,7 +96,7 @@
 % Chinese setup
 \ifdef{\@zh}{
   \xeCJKsetup{PunctStyle=kaiming}
-  \setCJKmainfont{Source Han Serif CN}
+  \setCJKmainfont{Source Han Serif SC}
 }{}
 
 % Font Awesome icon aliases
